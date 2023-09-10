@@ -1,6 +1,9 @@
 const myLibrary = [
-  { name: "12 Rules for Life", author: "Jordan Peterson", pages: 200 },
-  { name: "12 Rules for Life", author: "Jordan Peterson", pages: 200 },
+  { name: "12 Rules for life", author: "Jordan Peterson", pages: 300 },
+  { name: "How to make her cum", author: "Binson Thangjam", pages: 69 },
+  { name: "Virginity 101", author: "Binson Thangjam", pages: 69 },
+  {name: "Journey to the Pleasure Cave", author:"Binson Thangjam",pages:69},
+  {name:"Make her beg for more",author:"Binson Thangjam",pages:69}
 ];
 
 function Book(name, author, pages) {
@@ -27,19 +30,23 @@ function addBook() {
 }
 
 function showBook(name, author, pages) {
-  const bookContainer = document.querySelector(".container");
+  const bookContainer = document.querySelector(".book-container");
 
   const card = document.createElement("div");
 
-  card.innerHTML = `<div class="Books"><div>Book: ${name}</div><div>Author: ${author}</div><div>Pages: ${pages}</div><button onclick="removeBook(parentElement)" class="remove">remove</button></div>`;
+  card.innerHTML = `<div class="Books card"><div class="card-body">
+                    <h5 class="card-title">${name}</h5>
+                    <p class="card-text">Author: ${author}</p>
+                    <p class="card-text">Pages: ${pages}</p>
+                    <button onclick="removeBook(parentElement.parentElement.parentElement)" class="remove btn btn-danger">remove</button>
+                    </div></div>`;
   bookContainer.appendChild(card);
 }
 
 displayBook();
 
 function removeBook(element) {
-//   const but = document.querySelector(".remove");
-//   but.addEventListener("click", (e) => removeBook(e));
-//   const bookContainer = document.querySelector(".container");
+  console.log(element);
+  // myLibrary.splice()
   element.remove();
 }

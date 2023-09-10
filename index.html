@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,13 +10,20 @@
     <link rel="stylesheet" href="bootstrap.css">
     <script src="script.js" defer></script>
 </head>
+
 <body>
-    <nav class="navbar">
-    <button onclick="addBook()">add book</button>
+    <nav class="navbar ">
+        <div class="container-fluid">
+            <div class="navbar-brand">
+               <img src="images/odin-lined.png" alt="odin-logo" width="30"> Library of Odin</div>
+            <button onclick="addBook()" class="btn btn-dark">add book</button>
+        </div>
+
 
     </nav>
-<div class="container">
-</div>
-    
+    <div class="book-container">
+    </div>
+
 </body>
+
 </html>
