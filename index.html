@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Library of Odin</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="bootstrap.css">
-    <script src="script.js" defer></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Library of Odin</title>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="bootstrap.css">
+        <script src="script.js" defer></script>
+    </head>
 
-<body>
-    <nav class="navbar ">
-        <div class="container-fluid">
-            <div class="navbar-brand">
-               <img src="images/odin-lined.png" alt="odin-logo" width="30"> Library of Odin</div>
-            <button onclick="addBook()" class="btn btn-dark">add book</button>
+    <body>
+        <nav class="navbar ">
+            <div class="container-fluid">
+                <div class="navbar-brand">
+                    <img src="images/odin-lined.png" alt="odin-logo" width="30"> Library of Odin
+                </div>
+                <button onclick="addBook()" class="btn btn-dark">add book</button>
+                <div>
+                    <form action="">
+                        <input type="text" placeholder="Book">
+                        
+                        <input type="text" placeholder="Author">
+                       
+                        <input type="number" placeholder="Pages">
+                        <button type="submit" class="btn btn-dark">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+
+        </nav>
+        <div class="book-container">
         </div>
 
-
-    </nav>
-    <div class="book-container">
-    </div>
-
-</body>
+    </body>
 
 </html>

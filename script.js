@@ -1,9 +1,6 @@
 const myLibrary = [
   { name: "12 Rules for life", author: "Jordan Peterson", pages: 300 },
-  { name: "How to make her cum", author: "Binson Thangjam", pages: 69 },
-  { name: "Virginity 101", author: "Binson Thangjam", pages: 69 },
-  {name: "Journey to the Pleasure Cave", author:"Binson Thangjam",pages:69},
-  {name:"Make her beg for more",author:"Binson Thangjam",pages:69}
+  
 ];
 
 function Book(name, author, pages) {
